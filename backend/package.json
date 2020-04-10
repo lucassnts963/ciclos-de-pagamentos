@@ -1,7 +1,11 @@
 {
-  "name": "backend",
+  "name": "my-money-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name my-money-backend"
+  },
   "license": "MIT",
   "dependencies": {
     "body-parser": "1.15.2",
